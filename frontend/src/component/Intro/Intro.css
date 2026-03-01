@@ -1,0 +1,363 @@
+.intro-holder{
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+}
+
+
+.intro_container{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: 5%;
+    margin-top: -5%;
+    padding-top: 10%;
+    color: rgb(247, 244, 244);
+    margin-bottom: 5%;
+}
+
+.intro-lined{
+    width: 85%;
+    height: 2px;
+    border: none;
+    outline: none;
+    background-color: rgba(197, 193, 193, 0.555);
+    margin-inline: auto;
+}
+
+
+.intro_left{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 49%;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: rgb(247, 243, 243);
+
+    
+}
+
+.intro_left h2{
+    display: flex;
+    color: rgb(248, 247, 247);
+    font-weight: 500;
+    font-size: 40px;
+    font-family: "Pacifico", cursive;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.intro_left p{
+    color: rgb(240, 238, 238);
+    width: 80%;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.intro_right{
+    display: flex;
+    flex-basis: 48%;
+    padding-top: 10%;
+}
+
+.intro_right{
+    display: flex;
+    flex-basis: 48%;
+    position: relative;
+
+}
+
+.intro_right img{
+    flex-basis: 100%;
+    width: 350px;
+}
+
+.intro_button{
+    position: absolute;
+    bottom: -13%;
+}
+
+
+.intro_button button{
+    padding: 13px 45px;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(196, 191, 191);
+    color: rgb(197, 193, 193);
+    cursor: pointer;
+}
+
+.intro_button button:hover{
+    background-color: rgba(154, 62, 5,0.6);
+    color: rgb(252, 244, 244);
+}
+
+.intro_button .button_1{
+    padding: 13px 45px;
+    background-color: rgb(253, 248, 248);
+    color: rgb(37, 35, 35);
+}
+
+.intro_button .button_1:hover{
+    padding: 13px 45px;
+    background-color: rgb(49, 49, 48);
+    color: rgb(218, 213, 213);
+}
+
+.intro_button .button_2{
+    padding: 13px 64px;
+}
+.intro_button .button_3{
+    padding: 13px 42px;
+}
+
+
+
+          /*...........media querry......*/
+
+@media (max-width:1115px){
+    .intro_right img {
+    flex-basis: 100%;
+    width: 500px;
+    margin-bottom: 25%;
+
+}
+
+.intro_button {
+    position: absolute;
+    bottom: -11%;
+}
+
+}
+
+@media (max-width:1115px){
+    .intro_left h2{
+    width: 80%;
+    font-weight: 500;
+    font-size: 27px;
+}
+
+.intro_left p {
+    width: 80%;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.intro_right img {
+    flex-basis: 100%;
+    width: 300px;
+    margin-top: 15%;
+
+}
+
+.intro_button {
+    position: absolute;
+    bottom: -10%;
+}
+
+
+}
+
+@media (max-width:1000px){
+
+.intro_button {
+    position: absolute;
+    bottom: -15%;
+}
+
+
+}
+
+@media (max-width:1000px){
+
+.intro_button {
+    position: absolute;
+    bottom: -20%;
+}
+
+
+}
+
+
+@media (max-width:998px){
+
+.intro_button {
+    position: absolute;
+    bottom: -13%;
+    margin-right: 3%;
+}
+
+
+}
+
+
+
+@media (max-width:974px){
+    .intro_left h2{
+    width: 80%;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.intro_left p {
+    width: 80%;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+.intro_right img {
+    flex-basis: 100%;
+    width: 350px;
+    margin-top: 15%;
+
+}
+
+.intro_button {
+    position: absolute;
+    bottom: -15%;
+    margin-right: 3%;
+    padding: 6px 16px;
+}
+
+}
+
+
+
+@media (max-width:926px){
+
+.intro_button {
+    position: absolute;
+    bottom: -17%;
+    margin-left: -20%;
+}
+
+
+}
+
+@media (max-width:853px){
+
+.intro_button {
+    position: absolute;
+    bottom: -20%;
+    margin-left: -20%;
+}
+
+.intro_left p {
+    font-size: 11px;
+}
+
+
+.intro_left h2 {
+    font-size: 14px;
+}
+
+
+}
+@media (max-width:798px){
+  .intro_left h2{
+    width: 80%;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+}
+
+
+@media (max-width:853px){
+
+.intro_button {
+    position: absolute;
+    bottom: -20%;
+    margin-left: -20%;
+}
+
+
+}
+
+@media (max-width:788px){
+    .intro_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media (max-width:745px){
+
+.intro_button {
+    position: absolute;
+    bottom: -28%;
+    margin-left: -20%;
+}
+
+
+}
+
+@media (max-width:74px){
+
+  .intro_left h2{
+    width: 80%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+}
+
+
+@media (max-width:788px){
+    .intro_left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+    margin-left: 12%;
+}
+.intro_button {
+    position: absolute;
+    bottom: -28%;
+    margin-left: -20%;
+}
+
+
+}
+
+@media (max-width:630px){
+  .intro_button {
+    display: none;
+}
+
+}
+
+@media (max-width:519px){
+
+    .intro_container {
+       padding-top: 15rem;
+    }
+ 
+}
+
+
+
+@media (max-width:398px){
+     .intro_left h2 {
+       margin-top: 5rem;
+    }
+
+        .intro_right img{
+        margin-bottom: 1%;
+    }
+}
+
+
+

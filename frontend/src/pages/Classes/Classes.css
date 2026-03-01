@@ -1,0 +1,500 @@
+
+.class-holdered{
+    background-color: rgb(49, 49, 49);
+    margin-bottom: -10%;
+    padding-bottom: 5%;
+}
+
+.class-header{
+    width: 100%;
+    height: 100%;
+
+}
+
+.class-overlay{
+    display: flex;
+    min-height: 40vh;
+    color: white;
+    padding: 0px 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.603);
+  
+}
+
+.overlay-content{
+    width: 100%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.overlay-content-d{
+    margin-top: 23%;
+    width: 60%;
+    margin-left: 4%;
+}
+.overlay-content-d h2{
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: 400;
+    width: 400px;
+    font-size: 21px;
+}
+
+.classes-content-holder{
+    width: 48%;
+    background-color: rgb(53, 48, 2);
+    border-left: 4px solid rgba(255, 250, 243, 0.658);
+}
+.classes-head{
+    background: rgba(255, 255, 255, 0.459);
+    width: 400px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px; 
+    padding: 20px 20px;
+    margin-top: 10%;
+    margin-right: 8%;
+}
+
+.classes-head h3{
+    color: rgb(8, 8, 8);
+}
+
+.classes-head button{
+    background-color: rgb(161, 170, 35);
+    color: white;
+    width: 300px;
+    height: 40px;
+    align-items: center;
+    border: none;
+    font-weight: 600;
+}
+
+.classes-head button:hover{
+    background-color: rgb(193, 204, 32);
+}
+.class-img{
+    width: 500px;
+    height: 300px;
+    margin-top: 15%;
+
+}
+
+.overlay-content h1{
+    font-size: 46px;
+    font-weight: 400;
+    margin-top: -26%;
+}
+
+.overlay-content.classes-head{
+    margin-top: 10%;
+    background-color: white;
+}
+
+.content-img img{
+    width: 500px;
+    height: 70vh;
+    margin-top: 7%;
+    margin-left: 6%;
+    flex-basis: 50%;
+}
+
+.class-intro{
+    display: flex;
+    width: 100%;
+}
+
+.class-content{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    color: white;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: -19%;
+}
+
+.p-above{
+    background-color: white;
+    font-size: 27px;
+    font-weight: 500;
+    color: rgb(5, 5, 5);
+    width: 60%;
+}
+
+.class-content p{
+    font-size: 15px;
+    margin-left: 16%;
+}
+
+.class-content .p-below{
+    margin-left: 34%;
+    font-size: 12px;
+    background-color: rgb(60, 50, 3);
+    padding: 10px 10px;
+}
+
+.class-container{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+
+}
+
+.class-holder{
+    width: 85%;
+    display: flex;
+    margin-left: 14%;
+    margin-top: 10%;
+
+}
+
+.class-holder .class-left{
+    flex-basis: 40%;
+}
+.class-holder .class-left img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    flex-basis: 40%;
+}
+.class-holder .class-right{
+    flex-basis: 40%;
+    border: 2px solid rgba(255, 255, 255, 0.075);
+    
+}
+.class-holder .class-right:hover{
+    border: 2px solid rgba(255, 255, 255, 0.534);
+
+}
+.class-holder .class-right h1{
+   font-weight: 400;
+   color: white;
+   font-size: 23px;
+   margin: 10px 10px;
+}
+.class-holder .class-right p{
+    flex-basis: 37%;
+    color: rgba(255, 255, 255, 0.895);
+    margin-top: 3%;
+    padding: 10px 10px;
+    font-size: 13px;
+}
+.class-holder .class-right button{
+ padding: 8px 20px;
+ margin-top: 5%;
+ font-weight: 600;
+ border: none;
+ border-radius: 6px;
+ margin: 10px 10px;
+}
+.class-holder .class-right button:hover{
+    background-color: rgb(46, 49, 3);
+    color: white;
+ 
+}
+
+
+    
+        
+                        /*...........media querry......*/
+
+@media (max-width:1115px){
+
+       .p-above{
+    background-color: white;
+    font-size: 23px;
+}
+
+}
+
+@media (max-width:996px){
+
+       .p-above{
+    background-color: white;
+    font-size: 18px;
+}
+
+}
+
+
+@media (max-width:848px){
+
+       .p-above{
+    background-color: white;
+    font-size: 18px;
+}
+
+.overlay-content-d {
+    margin-top: 25%;
+}
+
+.classes-head{
+    width: 300px;
+    height: 120px;
+    margin-top: 13%;
+    margin-left: 5%
+}
+
+
+.classes-head h3{
+   font-size: 17px;
+
+}
+
+.classes-head button {
+    width: 250px;
+    margin-top: 2%;
+}
+
+}
+
+@media (max-width:833px){
+
+       .p-above{
+    background-color: white;
+    font-size: 14px;
+}
+
+.overlay-content-d {
+    margin-top: 25%;
+}
+
+.classes-head{
+    width: 250px;
+    height: 120px;
+    margin-top: 13%;
+    margin-left: -10%;
+}
+
+.overlay-content {
+    margin-left: 0;
+}
+
+.overlay-content-d h2 {
+    font-size: 17px;
+    width: 300px;
+}
+
+.classes-head h3{
+   font-size: 17px;
+   margin-left: 7%;
+
+}
+
+.classes-head button {
+    width: 200px;
+    margin-top: 2%;
+}
+
+.content-img img {
+    width: 400px;
+    height: 60vh;
+}
+}
+
+@media (max-width:732px){
+
+       .p-above{
+    background-color: white;
+    font-size: 14px;
+}
+
+.overlay-content-d {
+    margin-top: 29%;
+}
+
+.classes-head{
+    width: 250px;
+    height: 120px;
+    margin-top: 16%;
+    margin-left: -10%;
+}
+
+.overlay-content {
+    margin-left: 0;
+}
+
+.overlay-content-d {
+    margin-top: 29%;
+}
+
+.overlay-content-d h2 {
+    font-size: 16px;
+    width: 300px;
+}
+
+.classes-head h3{
+   font-size: 17px;
+   margin-left: 7%;
+
+}
+
+.classes-head button {
+    width: 200px;
+    margin-top: 2%;
+}
+
+.content-img img {
+    width: 400px;
+    height: 60vh;
+}
+
+.class-holder .class-right {
+    flex-basis: 30%;
+    margin-left: 5%;
+}
+
+
+.class-holder .class-right p {
+    font-size: 9px;
+
+}
+
+.class-holder .class-left img {
+    width: 300px;
+    height: 200px;
+    margin-top: 10%;
+
+}
+
+@media (max-width:625px){
+    .overlay-content h1 {
+    font-size: 27px;
+}
+
+.overlay-content-d h2 {
+        font-size: 15px;
+        width: 250px;
+}
+
+}
+
+@media (max-width:610px){
+      .class-intro {
+        display: none;
+      }
+}
+
+
+
+
+@media (max-width:590px){
+    .overlay-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+        .overlay-content-d {
+        margin-top: 25%;
+        margin-left: -15%;
+    }
+
+            .overlay-content h1 {
+            font-size: 32px;
+        }
+
+            .overlay-content-d h2 {
+            font-size: 15px;
+            width: 350px;
+        }
+
+            .classes-head {
+                margin-top: 4%;
+                margin-bottom: 5%;
+            }
+
+            .class-holder {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .class-holder .class-left img {
+                margin-left: 20%;
+            }
+
+            .class-holder .class-right {
+        width: 400px;
+        margin-left: 11%;
+    }
+
+        .class-holder .class-right p {
+        font-size: 11px;
+        width: 350px;
+    }
+    }
+}
+
+
+
+@media (max-width:491px){
+    .overlay-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlay-content-d {
+        margin-top: 29%;
+    }
+
+    .overlay-content h1 {
+        font-size: 32px;
+    }
+
+    .overlay-content-d h2 {
+        font-size: 15px;
+        width: 350px;
+    }
+
+    .classes-head {
+        margin-top: 4%;
+    }
+
+    .class-holder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .class-holder .class-left img {
+        margin-left: 12%;
+    }
+
+    .class-holder .class-right {
+        width: 300px;
+        margin-left: 11%;
+    }
+
+    .class-holder .class-right p {
+        font-size: 11px;
+        width: 290px;
+    }
+}
+
+
+@media (max-width:398px){
+          .class-holder .class-left img {
+        width: 200px;
+        height: 150px;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+       .class-holder .class-right p {
+        font-size: 10px;
+        width: 200px;
+    }
+
+        .class-holder .class-right {
+        width: 200px;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+}
+
+

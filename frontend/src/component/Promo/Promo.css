@@ -1,0 +1,147 @@
+.promo-cont{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.promo-container{
+    width: 100%;
+    height: auto;
+}
+
+.promo-header{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.promo-contact-header-left{
+    flex-basis: 45%;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+.promo-contact-header-left h1{
+    font-size: 50px;
+    font-weight: 300;
+    width: 85%;
+
+}
+
+.promo-contact-header-left p{
+    font-size: 15px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.541);
+
+}
+.promo-contact-header-left input{
+    background: white;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    margin-top: 2%;
+
+}
+
+.promo-contact-header-left button{
+    background: rgb(110, 94, 4);
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 2%;
+    font-weight: 600;
+}
+
+.promo-contact-header-left button:hover{
+    background: rgb(145, 125, 12);
+}
+
+.promo-contact-header-right{
+    flex-basis: 48%;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+.promo-contact-header-right img{
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+             /*...........media querry......*/
+
+
+@media (max-width:1115px){
+    .promo-header{
+        padding: 5% 5%;
+    }
+}
+
+@media (max-width:1000px){
+  .promo-contact-header-right img {
+    width: 400px;
+  }
+
+  .promo-contact-header-left h1{
+    font-size: 40px;
+}
+  .promo-contact-header-left span{
+    font-size: 13px;
+}
+
+}
+
+@media (max-width:868px){
+  .promo-contact-header-right img {
+    width: 360px;
+  }
+
+  .promo-contact-header-left h1{
+    font-size: 30px;
+}
+  .promo-contact-header-left p{
+    font-size: 13px;
+}
+
+}
+
+@media (max-width:740px){
+  .promo-contact-header-right img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .promo-contact-header-left h1{
+    font-size: 30px;
+}
+  .promo-contact-header-left p{
+    font-size: 11px;
+}
+
+}
+
+@media (max-width:604px){
+  .promo-contact-header-right img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .promo-contact-header-left h1{
+    font-size: 23px;
+}
+  .promo-contact-header-left p{
+    font-size: 11px;
+}
+
+}
+
+@media (max-width:604px){
+        .promo-header {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+}

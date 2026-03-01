@@ -1,0 +1,134 @@
+.team_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.team_heading{
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    color: rgb(235, 225, 225);
+    margin-left: 10%;
+}
+
+.team_heading p{
+    font-size: 1vw;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    color: rgb(223, 210, 210);
+}
+
+.team_heading h2{
+    font-size: 16px;
+   
+}
+
+.team_heading h4{
+    font-size: 14px;
+  
+}
+
+.team_image .slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 300px;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.804);
+    background: rgba(255, 255, 255, 0.084);
+    color: rgb(241, 233, 233);
+    backdrop-filter: blur(30px);
+    transition: 0.3s ease-in-out;
+
+}
+
+.team_image_container{
+    display: flex;
+    overflow-x: hidden;
+    gap: 10px;
+    width: 55%;
+}
+
+.team_image ul{
+    display: flex;
+}
+
+.team_image .slide .image_p{
+    width: 120px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    padding: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.753);
+   
+}
+
+.team_image .slide p{
+    font-weight: 600;
+    font-size: 15px;  
+}
+
+.team_image .slide span{
+    font-size: 12px;  
+}
+
+.fal{
+   color: rgba(62, 63, 63, 0.779);
+   margin: 5px 5px;
+   cursor: pointer;
+}
+
+.fal:hover{
+   color: rgba(231, 158, 95, 0.669);
+}
+
+
+.arrow_left, .arrow_right{
+    background: rgba(255, 255, 255, 0.712);
+    border-radius: 50%;
+    top: 66%;
+    right: 15%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    font-size: 17px;
+    padding: 5px 5px;
+    position: absolute;
+    align-items: center;
+
+}
+
+.arrow_left{
+    right: auto;
+    left: 15%;
+}
+
+
+
+                        /*...........media querry......*/
+
+@media (max-width:625px){
+       .team_image .slide {
+        width: 280px;
+       }
+
+}
+
+@media (max-width:398px){
+      .team_heading {
+    margin-left: 10rem;
+}
+
+    .team_image .slide{
+        width: 200px;
+    }
+}
+

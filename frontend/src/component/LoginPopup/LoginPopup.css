@@ -1,0 +1,74 @@
+.login-popup{
+    color: white;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    display: grid;
+}
+
+.login-popup-container{
+    place-self: center;
+    width: 400px;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 6%;
+}
+
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.cross-icon{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-popup-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-popup-input input{
+   outline: none;
+   border: 1px solid rgb(202, 198, 198);
+   padding: 10px;
+   border-radius: 4px;
+}
+
+.login-popup-container button{
+    border: none;
+    padding: 10px;
+    color: rgb(202, 198, 198);
+    background-color: rgb(134, 125, 1);
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-popup-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-popup-condition input{
+    margin-top: 5px;
+}
+
+.login-popup p span{
+    color: rgb(134, 125, 1);
+    font-weight: 500;
+    cursor: pointer;
+}

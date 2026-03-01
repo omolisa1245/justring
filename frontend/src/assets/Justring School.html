@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./Justring School_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justring School</title>
+    <link rel="stylesheet" href="./Justring School_files/css2">
+
+  <style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/index.css">@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: poppins;
+}
+
+body{
+    background-color: rgb(16, 16, 16);
+}
+
+/* keyframes */
+
+@keyframes to_right{
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes to_bottom{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(0px);
+        opacity: 1;
+    }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/component/Navbar/Navbar.css">.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+    justify-content: center;
+    gap: 30px;
+    background-color: black;
+    color: rgb(255, 254, 254);
+    
+
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+  
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+li.nav_line{
+    border: 1.5px solid rgb(255, 238, 231);
+    padding: 7px 15px;
+    background-color:  rgba(224, 184, 74, 0.2) ;
+    border-radius: 3px;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    justify-content: center;
+
+}
+
+.navbar-right input{
+    border: 1px solid rgb(71, 66, 66);
+    outline: none;
+    margin-left: 10%;
+    padding: 4px 8px;
+    background: transparent;
+    border-radius: 7px;
+    position: relative;
+    color: white;
+}
+.material-symbols-outlined{
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    position: absolute;
+    margin-left: 13.7%;
+    border-radius: 5px;
+    color: rgb(214, 216, 216);
+
+}
+
+.navbar button{
+    margin-left: 80px;
+    padding: 5px 30px;
+    border-radius: 30px;
+    border: 1px solid rgb(125, 112, 112);
+    background: transparent;
+    cursor: pointer;
+    margin-left: 5%;
+    color: white;
+}
+
+.navbar button:hover{
+    background-color: rgb(238, 231, 231);
+    color: black;
+}
+
+/* date details*/
+
+.calender{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.calender p{
+    font-size: 12px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/component/hero/Hero.css">
+.hero{
+    width: 100%;
+    min-height: 70vh;
+    background: url('/src/assets/lead-guitar.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    object-fit: cover;
+    position: relative;
+
+}
+.overlay{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(24, 21, 21,0.9);
+    z-index: 999;
+}
+
+.hero-content{
+    width: 40%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 5%
+}
+
+.hero-content-right p{
+    display: flex;
+    align-items: end;
+    width: 350px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 60%;
+    margin-left: 10%;
+    font-family: "Edu SA Hand", cursive;
+    animation: scale 1s ease forwards 1.3s;
+}
+
+.overlay img{
+    width: 13%;
+    margin-bottom: 2%;
+    opacity: 0;
+}
+
+.overlay img{
+    opacity: 1;
+    animation: to_bottom 1s ease forwards 1.2s;
+
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    font-weight: 500;
+    width: 100%;
+    animation: to_right 1s ease forwards .8s;
+}
+
+.hero-content h2{
+    font-weight: 500;
+    animation: to_right 1s ease forwards .9s;
+}
+
+.hero-content p{
+    font-weight: 400;
+    font-size: 10px;
+    width: 100%;
+    color: rgb(225, 221, 221);
+    animation: to_right 1s ease forwards 1s;
+}
+
+.hero-content em{
+    font-family: "Satisfy", cursive;
+    color: rgba(255, 183, 0, 0.874);
+}
+
+.hero-content button{
+    padding: 6px 25px;
+    border-radius: 7px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    margin-top: 24px;
+    animation: to_right 1s ease forwards 1.1s;
+}
+
+.hero-content button:hover{
+    background-color: rgb(214, 201, 201);
+    color: brown;
+    font-weight: 600;
+}
+
+
+/*time-card*/
+
+.time-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    top: 78%;
+    z-index: 999;
+    background: transparent;
+}
+
+.time-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 80px;
+    box-shadow: 0px 14px 28px 0px rgba(82, 82, 82, 0.25);
+    background-color: rgb(160, 106, 24);
+    border-radius: 7px;
+    gap: 200px;
+}
+
+.time-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 80px;
+    box-shadow: 0px 14px 28px 0px rgba(63, 63, 63, 0.25);
+    background-color: rgb(160, 106, 24);
+    border-radius: 7px;
+    gap: 200px;
+}
+
+.time-3{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 80px;
+    box-shadow: 0px 14px 28px 0px rgba(66, 66, 66, 0.25);
+    background-color: rgb(160, 106, 24);
+    border-radius: 7px;
+    gap: 200px;
+    font-size: 15px;
+}
+
+
+.time-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+}
+
+.time-details h4{
+    font-size: 20px;
+}
+
+.clock{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: rgb(14, 13, 13);
+}
+
+.calender{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    color:  rgb(11, 11, 11);
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+
+.clock p{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.calender p{
+     font-size: 12px;
+    font-weight: 700;
+}
+
+.date-image{
+    color: rgb(16, 16, 16);
+    font-weight: 900;
+    margin-right: 20px;
+}
+
+.middle-cont{
+    align-items: start; 
+    background-color: rgb(210, 208, 208); 
+    width: 160px;
+    height: 50px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/component/Intro/Intro.css">.intro_container{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: 5%;
+}
+.intro_left{
+    display: flex;
+    flex-basis: 48%;
+    margin-left: 5%;
+
+}
+.intro_left h2{
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: "Pacifico", cursive;
+}
+.intro_left p{
+    color: rgb(235, 233, 233);
+    width: 80%;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+
+.intro_right{
+    display: flex;
+    flex-basis: 48%;
+}
+
+.intro_right{
+    display: flex;
+    flex-basis: 48%;
+    position: relative;
+
+}
+
+.intro_right img{
+    flex-basis: 100%;
+    width: 500px;
+}
+
+.intro_button{
+    position: absolute;
+    bottom: -25%;
+}
+
+.intro_button button{
+    padding: 13px 45px;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    background: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.intro_button button:hover{
+    background-color: rgba(154, 62, 5,0.6);
+    color: rgb(254, 254, 254);
+}
+
+.intro_button .button_1{
+    padding: 13px 45px;
+    background-color: rgba(255, 253, 253,1);
+    color: black;
+}
+
+.intro_button .button_1:hover{
+    padding: 13px 45px;
+    background-color: rgb(26, 21, 18);
+    color: rgb(239, 237, 237);
+}
+
+.intro_button .button_2{
+    padding: 13px 64px;
+}
+.intro_button .button_3{
+    padding: 13px 42px;
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/component/outro/Outro.css">.outro_container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 60px 40px;
+    margin-top: 10%;
+}
+.outro_left{
+    flex-basis: 46%;
+    position: relative;
+    margin-bottom: 20%;
+}
+.outro_left img{
+    width: 500px;
+    box-shadow: 0px 14px 28px 0px rgba(146, 146, 146, 0.25);
+}
+.outro_left img:hover{
+    box-shadow: 0px 14px 28px 0px rgba(146, 146, 146, 0.45);
+}
+
+.outro_right{
+    flex-basis: 50%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+}
+
+.outro_right h2{
+   color: white;
+   width: 100%;
+   font-weight: 500;
+   font-size: 40px;
+   font-family: "Pacifico", cursive;
+}
+
+.outro_right p{
+    color: rgb(235, 233, 233);
+    width: 80%;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.outro_button{
+    position: absolute;
+    bottom: -40%;
+}
+.outro_left button{
+    padding: 13px 45px;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    background: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.outro_left button:hover{
+    background-color: rgba(154, 62, 5,0.6);
+    color: rgb(254, 254, 254);
+}
+
+.outro_left .button_1{
+    padding: 13px 45px;
+    background-color: rgba(255, 253, 253,1);
+    color: black;
+}
+
+.outro_left .button_1:hover{
+    padding: 13px 45px;
+    background-color: rgb(26, 21, 18);
+    color: rgb(239, 237, 237);
+}
+
+.outro_left .button_2{
+    padding: 13px 64px;
+}
+.outro_left .button_3{
+    padding: 13px 42px;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/component/Gallery/Gallery.css">.gallery-head{
+    width: 100%;
+    height: 45vw;
+    background-color: white;
+    border-top: 8px solid rgb(171, 144, 38);
+
+} 
+ 
+.gallery_container{
+    width: 100%;
+}
+
+.gallery_title{
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    width: 400px;
+    justify-content: center;
+    margin-left: 33%;
+    margin-bottom: 5%;
+}
+
+.gallery_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-left: 12%;
+    margin-bottom: 10%;
+    width: 80%;
+}
+
+.gallery_container img{
+    width: 230px;
+    height: 150px;
+    transition: 0.4s;
+    margin-left: 20px;
+    margin: 3px;
+    transition: 0.3s ease-in;
+}
+
+.gallery_container img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 12px 30px rgba(129, 129, 129, 0.5);
+}</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/component/Team/Team.css">.team_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.team_heading{
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    color: rgb(242, 240, 240);
+}
+
+.team_heading p{
+    font-size: 13px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    color: rgb(251, 248, 248);
+}
+
+.team_image .slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 35px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: white;
+    backdrop-filter: blur(30px);
+    transition: 0.3s ease-in-out;
+
+}
+
+.team_image_container{
+    display: flex;
+    overflow-x: hidden;
+    gap: 10px;
+    width: 55%;
+}
+
+.team_image ul{
+    display: flex;
+}
+
+.team_image .slide .image_p{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    padding: 4px;
+    border: 2px solid white;
+   
+}
+
+.team_image .slide p{
+    font-weight: 600;
+    font-size: 15px;  
+}
+
+.team_image .slide span{
+    font-size: 12px;  
+}
+
+.fal{
+   color: rgba(222, 225, 225, 0.779);
+   margin: 5px 5px;
+   cursor: pointer;
+}
+
+.fal:hover{
+   color: rgba(231, 158, 95, 0.669);
+}
+
+
+.arrow_left, .arrow_right{
+    background: white;
+    border-radius: 50%;
+    top: 66%;
+    right: 15%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    padding: 5px 5px;
+    position: absolute;
+    align-items: center;
+
+}
+
+.arrow_left{
+    right: auto;
+    left: 15%;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/component/Testimonial/Testimonial.css">.testimonial-head{
+    width: 100%;
+    height: 35vw;
+    background-color: rgb(255, 255, 255);
+}
+.slider-container{
+   width: 70%;
+   margin-left: 14%;
+   gap: 10%;
+}
+
+.slider-content{
+    background-color: rgb(81, 75, 72);
+}
+
+
+
+.test-container{
+    width: 400px;
+    height: 300px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 1% 3%;
+}
+
+.test-container p{
+    font-size: 12px;
+    width: 350px;
+}
+
+.test-container span{
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.test-container h3{
+    font-weight: 500;
+    font-size: 16px;
+}
+.image-s{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgb(248, 181, 81);
+    margin-right: 2%;
+}
+
+.image-details{
+    display: flex;
+    flex-direction: column;
+}
+ </style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/node_modules/slick-carousel/slick/slick.css">/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/node_modules/slick-carousel/slick/slick-theme.css">@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('/node_modules/slick-carousel/slick/ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('/node_modules/slick-carousel/slick/fonts/slick.eot');
+    src: url('/node_modules/slick-carousel/slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('/node_modules/slick-carousel/slick/fonts/slick.woff') format('woff'), url('/node_modules/slick-carousel/slick/fonts/slick.ttf') format('truetype'), url('/node_modules/slick-carousel/slick/fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/HP/OneDrive/Desktop/Justring School/frontend/src/component/Footer/Footer.css">.footer-container{
+    width: 100%;
+    height: 20vw;
+    margin-top: 10%;
+    background: rgb(185, 184, 184);
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.logo-footer{
+    width: 40px;
+    cursor: pointer;
+}
+
+.text{
+    font-size: 17px;
+    margin-left: 5%;
+    
+}
+
+.social-container{
+    width: 35%;
+    background-color: rgb(71, 58, 17);
+    height: 20vw;
+    color: white;
+}
+
+.social-container span{
+   font-size: 22px;
+}
+
+.img-soc{
+    width: 20px;
+    margin-top: 5%;
+    margin: 5% 5px;
+}
+
+.content-soc{
+    margin-top: 7%;
+    margin-left: 10%;
+
+}
+
+.input-b input{
+    padding: 10px 25px;
+}
+
+.input-b button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}</style></head>
+  <body>
+    <div id="root"><div class="app"><div class="navbar"><img alt="" class="logo" src="./Justring School_files/logo_1.png"><ul class="nav"><li class="nav_line">Home</li><li class="">About</li><li class="">Material</li><li class="">Blog</li><li class="">Contact us</li></ul><div class="navbar-right"><input placeholder="Search...." type="text"><span class="material-symbols-outlined search-icon">search</span></div><button>Sign in</button></div><div class="hero"><div class="overlay"><div class="hero-content"><h1>Learn <em>Musical</em></h1><b></b><h2>Instrument From The Best</h2><p>Musical ability is not an inborn talent, but an ability which can be developed. Justring offers different all kinds of string Musical Instrument programs on-campus or online...</p><button class="btn">Enrol Now</button></div><div class="hero-content-right"><p>"Music activates both the left and right brain at the same time, and the activation of both hemispheres can maximize learning and improve memory...."Dr. Masha Godkin, quoted by National University.</p></div><img alt="" src="./Justring School_files/header-3.png"></div></div><div class="time-container"><div class="time-1"><div class="time-details"><h4>Adult Class</h4><div class="middle-cont"><div class="calender"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="date-image" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M960 95.888l-256.224.001V32.113c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76h-256v-63.76c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76H64c-35.344 0-64 28.656-64 64v800c0 35.343 28.656 64 64 64h896c35.344 0 64-28.657 64-64v-800c0-35.329-28.656-63.985-64-63.985zm0 863.985H64v-800h255.776v32.24c0 17.679 14.32 32 32 32s32-14.321 32-32v-32.224h256v32.24c0 17.68 14.32 32 32 32s32-14.32 32-32v-32.24H960v799.984zM736 511.888h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32zm0 255.984h64c17.664 0 32-14.32 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.696 14.336 32 32 32zm-192-128h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32zm0-255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm-256 0h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm0 255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32z"></path></svg><p>Mon-Fri</p></div><div class="clock"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="date-image" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path></svg><p>2pm-5pm</p></div></div></div></div><div class="time-2"><div class="time-details"><h4>Kiddies Class</h4><div class="middle-cont"><div class="calender"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="date-image" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M960 95.888l-256.224.001V32.113c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76h-256v-63.76c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76H64c-35.344 0-64 28.656-64 64v800c0 35.343 28.656 64 64 64h896c35.344 0 64-28.657 64-64v-800c0-35.329-28.656-63.985-64-63.985zm0 863.985H64v-800h255.776v32.24c0 17.679 14.32 32 32 32s32-14.321 32-32v-32.224h256v32.24c0 17.68 14.32 32 32 32s32-14.32 32-32v-32.24H960v799.984zM736 511.888h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32zm0 255.984h64c17.664 0 32-14.32 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.696 14.336 32 32 32zm-192-128h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32zm0-255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm-256 0h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm0 255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32z"></path></svg><p>Mon-Fri</p></div><div class="clock"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="date-image" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path></svg><p>10am-1pm</p></div></div></div></div><div class="time-3"><div class="time-2"><div class="time-details"><h4>Weekend Class</h4><div class="middle-cont"><div class="calender"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="date-image" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M960 95.888l-256.224.001V32.113c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76h-256v-63.76c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76H64c-35.344 0-64 28.656-64 64v800c0 35.343 28.656 64 64 64h896c35.344 0 64-28.657 64-64v-800c0-35.329-28.656-63.985-64-63.985zm0 863.985H64v-800h255.776v32.24c0 17.679 14.32 32 32 32s32-14.321 32-32v-32.224h256v32.24c0 17.68 14.32 32 32 32s32-14.32 32-32v-32.24H960v799.984zM736 511.888h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32zm0 255.984h64c17.664 0 32-14.32 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.696 14.336 32 32 32zm-192-128h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32zm0-255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm-256 0h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm0 255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32z"></path></svg><p>Sat &amp; Sun</p></div><div class="clock"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="date-image" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path></svg><p>2pm-5pm</p></div></div></div></div></div></div><div class="intro_container"><div class="intro_left"><p><h2>Welcome to Justring</h2><br>where we provide Strin learning to students in an accessible and safe manner is a top priority. Our online, one-on-one music class allows students to take music lessons remotely. Right here we furthers your musical journey in a way that prioritizes flexibility and well-being. Weekly online instruction is conducted by our expert instructors in a safe virtual lesson room. we have remained dedicated to teaching string instrument and fostering a deep passion for the instrument. While our campus resides in Awoyaya, the heart of the entertainment industry, we are thrilled to bring our world-class curriculum to aspiring string lovers worldwide through our school. Our renowned programs continues to provide the essential skills necessary for a successful and exhilarating music career. Our online classes are led by active professional players who impart comprehensive knowledge and expertise in guitar fundamentals. From performance techniques to advanced skills, ear training, melodic soloing, and diverse contemporary styles, our instructors guide students in mastering the essentials.</p></div><div class="intro_right"><img alt="" src="./Justring School_files/cut_2.png"><div class="intro_button"><button class="button_1">Explore Our Facilities</button><br><button class="button_2">Enrol for a Class</button><br><button class="button_3">Request For More Info</button></div></div></div><div class="outro_container"><div class="outro_left"><img alt="" src="./Justring School_files/intro.jpg"><div class="outro_button"><button class="button_1">Explore Our Facilities</button><br><button class="button_2">Enrol for a Class</button><br><button class="button_3">Request For More Info</button></div></div><div class="outro_right"><h2>Where will your journey begin</h2><p>Justring is a musical instrument learning school for all skill levels, ages, and musical aspirations. With students ranging from toddlers to adults, School of Rock is where music students grow into real musicians We are teaching young minds how to think, how to problem solve, how to collaborate through music. We set high expectations for all students. We deliver a rigorous curriculum that demands musical and behavioral excellence. We root all of this in a strong culture of support.</p></div></div><div class="gallery-head"><div class="gallery_title">Explore Our Facilities</div><div class="gallery_container"><div class="gallery_image"><img alt="" src="./Justring School_files/gal_1.jpg"><img alt="" src="./Justring School_files/gal_2.jpg"><img alt="" src="./Justring School_files/gal_3.jpg"><img alt="" src="./Justring School_files/gal_4.jpg"><img alt="" src="./Justring School_files/gal_5.jpg"><img alt="" src="./Justring School_files/gal_6.jpg"><img alt="" src="./Justring School_files/gal_7.jpg"><img alt="" src="./Justring School_files/gal_8.jpg"></div></div></div><div class="testimonial-head"><div class="slider-container"><div class="slick-slider slick-initialized" dir="ltr"><button type="button" data-role="none" class="slick-arrow slick-prev" style="display: block;"> Previous</button><div class="slick-list"><div class="slick-track" style="width: 780px; opacity: 1; transform: translate3d(-416px, 0px, 0px); transition: -webkit-transform 5000ms linear;"><div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_6.jpeg"><h3>Makinde Idowu</h3><span>Bass Guitar</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_7.jpeg"><h3>Hassan Kehinde</h3><span>Harp Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_8.jpeg"><h3>Mike Bankole</h3><span>Cello Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_4.jpeg"><h3>Mike Bankole</h3><span>violin Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/lec_4.jpg"><h3>Ademola Lolu</h3><span>Banjo Player</span></div><p> love the how the instructor is really committed to bringing out the best in me and making sure we achieve the objectives I have laid out. Staff are also very friendly and welcoming!</p></div></div></div></div><div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_5.jpeg"><h3>Emeka Collins</h3><span>Giutar Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_6.jpeg"><h3>Makinde Idowu</h3><span>Bass Guitar</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_7.jpeg"><h3>Hassan Kehinde</h3><span>Harp Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="5" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_8.jpeg"><h3>Mike Bankole</h3><span>Cello Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="6" tabindex="-1" class="slick-slide slick-active slick-cloned" aria-hidden="false" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_4.jpeg"><h3>Mike Bankole</h3><span>violin Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="7" tabindex="-1" class="slick-slide slick-active slick-cloned" aria-hidden="false" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/lec_4.jpg"><h3>Ademola Lolu</h3><span>Banjo Player</span></div><p> love the how the instructor is really committed to bringing out the best in me and making sure we achieve the objectives I have laid out. Staff are also very friendly and welcoming!</p></div></div></div></div><div data-index="8" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_5.jpeg"><h3>Emeka Collins</h3><span>Giutar Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="9" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_6.jpeg"><h3>Makinde Idowu</h3><span>Bass Guitar</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="10" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_7.jpeg"><h3>Hassan Kehinde</h3><span>Harp Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div><div data-index="11" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 52px;"><div><div class="slider-content" tabindex="-1" style="width: 100%; display: inline-block;"><div class="test-container"><div class="image-details"><img class="image-s" alt="" src="./Justring School_files/student_8.jpeg"><h3>Mike Bankole</h3><span>Cello Player</span></div><p> Competent teachers who seem to be very “in touch” with teaching and learning. I like the fact that they themselves are students, teach in some other capacity, and are an active part of a community of artists. I feel these aspects bring a different dynamic and passion to their teaching that a musician teaching at home wouldn’t necessarily have, even though they might be a very talented. I like the way Vivaldi offers different and unique opportunities for students to perform. Thank you.</p></div></div></div></div></div></div><button type="button" data-role="none" class="slick-arrow slick-next" style="display: block;"> Next</button><ul class="slick-dots" style="display: block;"><li class=""><button>1</button></li><li class=""><button>2</button></li><li class=""><button>3</button></li><li class=""><button>4</button></li><li class=""><button>5</button></li><li class="slick-active"><button>6</button></li></ul></div></div></div><div class="footer-container"><div class="text"><img class="logo-footer" alt="" src="./Justring School_files/logo_1.png"><p>Home</p><p>Online Lesson</p><p>Tutorial Guide</p><p>Blog</p><p>News and Press Release</p><p>Search</p></div><div class="text"><h3>Quick Links</h3><p>Login</p><p>Dashboard</p><p>Student support</p><p>FAQ</p><p>Contact</p><p>Career</p></div><div class="text"><h3>Locations</h3><p>Awoyaya</p><p>Victoria Island</p><p>Ikeja</p><p>Abule Egba</p><p>Abule Egba</p><p>Abule Egba</p></div><div class="social-container"><div class="content-soc"><h3>JUSTRING NOW</h3> <span>The latest string learning,<br> stories, ideas, and events.</span><div class="input-b"><input placeholder="Email address" type="text"><button>SUBSCRIBE</button></div><div class="social-media"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="img-soc" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="img-soc" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="img-soc" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="img-soc" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></div></div></div></div></div></div>
+    <script type="module" src="./Justring School_files/main.jsx"></script>
+  
+
+</body></html>
