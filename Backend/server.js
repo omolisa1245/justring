@@ -1,30 +1,30 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
+import "dotenv/config";
+
 import { connectDB } from "./config/db.js";
 import userRouter from "./routes/userRoute.js";
-import "dotenv/config";
 import formRouter from "./routes/infoRoute.js";
 
-
-// app config
+// App Config
 const app = express();
-const port = 5000
 
-// middleware
-app.use(bodyParser.json());
+// Middleware
+app.use(cors());
 app.use(express.json());
-app.use(cors())
+app.use(bodyParser.json());
 
-// DB connection
+// Database Connection
 connectDB();
 
+// Routes
+app.use("/api/user", userRouter);
+app.use("/api/form", formRouter);
 
-//api end point
-app.use("/api/user/",userRouter)
-app.use("/api/form/", formRouter)
+app.get("/", (req, res) => {
+  res.status(200).send("API is running");
+});
 
-app.get("/", (req,res)=> {
-    res.send("api initiating")
-})
-
+// ✅ VERY IMPORTANT FOR VERCEL
+export default app;
